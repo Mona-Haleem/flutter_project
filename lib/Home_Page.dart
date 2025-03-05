@@ -18,30 +18,57 @@ class _HomeState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.menu),
-        title: Text(
-          "Hello World",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-        backgroundColor: Color(0xffab9acb),
-        foregroundColor: Colors.white,
-
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.star)),
-          IconButton(
-            onPressed: increseCounter,
-            icon: Text(
-              '$counter',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+      // appBar: AppBar(
+      //   leading: Icon(Icons.menu),
+      //   title: Text(
+      //     "Hello World",
+      //     style: TextStyle(fontWeight: FontWeight.bold),
+      //   ),
+      //   centerTitle: true,
+      //   backgroundColor: Color(0xffdeacfe),
+      //   foregroundColor: Colors.white,
+      //
+      //   actions: [
+      //     IconButton(onPressed: () {}, icon: Icon(Icons.star)),
+      //     IconButton(
+      //       onPressed: increseCounter,
+      //       icon: Text(
+      //         '$counter',
+      //         style: TextStyle(
+      //           fontWeight: FontWeight.bold,
+      //           color: Colors.white,
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
+      body: SafeArea(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(child: Container(color: Colors.blueAccent)),
+            Expanded(
+              flex: 2,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Expanded(child: Container(height: 80, color: Colors.amber)),
+                    Expanded(
+                      child: Container(
+                        height: 80,
+                        color: Colors.deepOrangeAccent,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+            Expanded(child: Container(color: Colors.indigo)),
+          ],
+        ),
       ),
+      backgroundColor: Color(0xffb0ccff),
     );
   }
 }
