@@ -14,7 +14,7 @@ class BasicLayout extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 child: Row(
                   children: [
-                    Expanded(child: Container(height: 80, color: Colors.amber)),
+                    Expanded(child: Container(height: 80, color: Colors.lightGreen)),
                     Expanded(
                       child: Container(
                         height: 80,
