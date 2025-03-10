@@ -21,7 +21,7 @@ class ChatItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: index.isEven ? Colors.grey[800] : null,
+        color: index.isEven ? Color(0xff111111) : null,
         borderRadius: BorderRadius.circular(10),
       ),
       child: ListTile(
