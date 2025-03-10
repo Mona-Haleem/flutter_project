@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter_project/app_bar.dart';
-import 'package:flutter_project/layout.dart';
+import 'package:flutter_project/lab2/layout.dart';
 
 
 class HomePage extends StatefulWidget {

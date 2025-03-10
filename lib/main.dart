@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/Home_Page.dart';
-import 'package:flutter_project/Login_page.dart';
+import 'package:flutter_project/lab3/Login_page.dart';
+
+import 'lab4/chat_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LoginPage(),
+      home: ChatScreen(),
     );
   }
 }
