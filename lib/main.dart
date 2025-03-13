@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/lab7/Login_page.dart';
 //import 'package:flutter_project/Home_Page.dart';
 //import 'package:flutter_project/lab3/Login_page.dart';
 //import 'lab4/chat_screen.dart';
-import 'lab5/Input_page.dart';
-import 'lab6/Home_screen.dart';
+//import 'lab5/Input_page.dart';
+//import 'lab6/Home_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -35,7 +40,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
